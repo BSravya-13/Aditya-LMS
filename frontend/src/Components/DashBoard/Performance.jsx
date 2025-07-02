@@ -12,7 +12,7 @@ const Performance = () => {
     async function fetchCourse() {
       try {
         const userId = localStorage.getItem("id");
-        const response = await axios.get(`https://backend-production-eff3.up.railway.app/api/learning/${userId}`);
+        const response = await axios.get(`https://backend-production-5243.up.railway.app/api/learning/${userId}`);
         const fetchedCourse = response.data;
         setEnrolledCourses(fetchedCourse);
       } catch (err) {
@@ -24,7 +24,7 @@ const Performance = () => {
 
   useEffect(()=>{
     const userId = localStorage.getItem("id");
-     fetch(`https://backend-production-eff3.up.railway.app/api/assessments/perfomance/${userId}`).then((res)=>res.json()).then((data)=>{setPerfomanceData(data)});
+     fetch(`https://backend-production-5243.up.railway.app/api/assessments/perfomance/${userId}`).then((res)=>res.json()).then((data)=>{setPerfomanceData(data)});
    
   },[])
 
