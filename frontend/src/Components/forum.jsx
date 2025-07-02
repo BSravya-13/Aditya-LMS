@@ -18,10 +18,10 @@ function Forum() {
   });
 
   useEffect(() => {
-    fetch(`https://backend-production-eff3.up.railway.app/api/discussions/${courseId}`)
+    fetch(`https://backend-production-5243.up.railway.app/api/discussions/${courseId}`)
       .then((res) => res.json())
       .then((data) => setMessage(data));
-       fetch(`https://backend-production-eff3.up.railway.app/api/courses/${courseId}`).then((res)=>res.json()).then((data)=>setCourse(data));
+       fetch(`https://backend-production-5243.up.railway.app/api/courses/${courseId}`).then((res)=>res.json()).then((data)=>setCourse(data));
   }, []);
 
   const addTask = () => {
@@ -29,7 +29,7 @@ function Forum() {
       const newMessage = taskRef.current.value.trim();
       setFormData({ ...formData, content: newMessage });
   
-      fetch('https://backend-production-eff3.up.railway.app/discussions/addMessage',{
+      fetch('https://backend-production-5243.up.railway.app/discussions/addMessage',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
