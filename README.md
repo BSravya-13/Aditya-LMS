@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Online Learning Management System
 
 ## Overview
@@ -174,3 +175,6 @@ Home page:
 
 # LMS_MAIN1
 >>>>>>> 576ce548182573ae6c750edd959270f77f8e3565
+=======
+# Aditya-LMS
+>>>>>>> 26e29d8b8eab59c7524d72eb259efbd957118760
