@@ -18,7 +18,7 @@ function YourComponent() {
   const [openModal, setOpenModal] = useState(false);
   const[totalQsns , SetTotalQsns] = useState(0);
   useEffect(() => {
-   fetch(`https://backend-production-eff3.up.railway.app/api/questions/${courseId}`)
+   fetch(`https://backend-production-5243.up.railway.app/api/questions/${courseId}`)
       .then(res => res.json())
       .then(res => {
         setTest(res);
@@ -46,7 +46,7 @@ const handleMarks = () =>{
     userId: localStorage.getItem("id"),  
     marks: (correctCount/totalQsns)*100 
   }
-   axios.post(`https://backend-production-eff3.up.railway.app/api/assessments/add/${userId}/${courseId}`, data)
+   axios.post(`https://backend-production-5243.up.railway.app/api/assessments/add/${userId}/${courseId}`, data)
   .then(response => {
     console.log('Request successful:', response.data);
   })
