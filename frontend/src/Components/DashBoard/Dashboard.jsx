@@ -10,15 +10,15 @@ function Dashboard() {
   const[enrolled , setEnrolled] = useState(0);
 
  useEffect(() => {
-  fetch("https://backend-production-eff3.up.railway.app/api/users")
+  fetch("https://backend-production-5243.up.railway.app/api/users")
     .then((data) => data.json())
     .then((res) => setUserscount(res.length));
 
-  fetch("https://backend-production-eff3.up.railway.app/api/courses")
+  fetch("https://backend-production-5243.up.railway.app/api/courses")
     .then((data) => data.json())
     .then((res) => setCoursescount(res.length));
 
-  fetch("https://backend-production-eff3.up.railway.app/api/learning")
+  fetch("https://backend-production-5243.up.railway.app/api/learning")
     .then((data) => data.json())
     .then((res) => setEnrolled(res.length));
 }, []);
