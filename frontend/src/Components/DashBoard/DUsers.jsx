@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 function Users() {
   const [users , setUsers] = useState([]);
   useEffect(()=>{
-    fetch("https://backend-production-eff3.up.railway.app/api/users").then((data)=>data.json()).then((res)=>setUsers(res));
+    fetch("https://backend-production-5243.up.railway.app/api/users").then((data)=>data.json()).then((res)=>setUsers(res));
   },[])
   console.log(users);
   return (
