@@ -22,7 +22,7 @@ function AddCourse() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://backend-production-eff3.up.railway.app/api/courses', {
+      const response = await fetch('https://backend-production-5243.up.railway.app/api/courses', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
