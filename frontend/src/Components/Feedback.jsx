@@ -8,7 +8,7 @@ const Feedback = (props) => {
   const [feedbacks, setFeedbacks] = useState([]);
 
   useEffect(() => {
-     fetch(`https://backend-production-eff3.up.railway.app/api/feedbacks/${courseId}`)
+     fetch(`https://backend-production-5243.up.railway.app/api/feedbacks/${courseId}`)
       .then((res) => res.json())
       .then((data) => {
         const firstThreeFeedbacks = data.slice(0, 3);
@@ -21,7 +21,7 @@ const Feedback = (props) => {
     if (feedback === "" && !courseId) {
       alert("Please enter feedback to submit");
     } else {
-       fetch("https://backend-production-eff3.up.railway.app/api/feedbacks", {
+       fetch("https://backend-production-5243.up.railway.app/api/feedbacks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
