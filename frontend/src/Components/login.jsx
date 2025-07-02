@@ -14,7 +14,7 @@ function Login() {
   const login = async (e) => {
     e.preventDefault();
     try {
-      const response = await  fetch("https://backend-production-eff3.up.railway.app/api/users/login", {
+      const response = await  fetch("https://backend-production-5243.up.railway.app/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -29,7 +29,7 @@ function Login() {
         console.log(data.token);
 
         const userDetailsResponse = await fetch(
-          `https://backend-production-eff3.up.railway.app/api/users/details?email=${email}`
+          `https://backend-production-5243.up.railway.app/api/users/details?email=${email}`
         );
 
         if (userDetailsResponse.ok) {
