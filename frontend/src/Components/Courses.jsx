@@ -15,7 +15,7 @@ function Courses() {
    const authToken = localStorage.getItem('token');
   
   useEffect(() => {
-   fetch("https://backend-production-eff3.up.railway.app/api/courses")
+   fetch("https://backend-production-5243.up.railway.app/api/courses")
       .then((response) => response.json())
       .then((data) => {
         setCourses(data);
@@ -25,7 +25,7 @@ function Courses() {
       });
       const userId = localStorage.getItem("id");
       if(userId){
-         fetch(`https://backend-production-eff3.up.railway.app/api/learning/${userId}`)
+         fetch(`https://backend-production-5243.up.railway.app/api/learning/${userId}`)
           .then((response) => response.json())
           .then((data) => {
             console.log(data);
@@ -47,7 +47,7 @@ function Courses() {
         userId: userId,
         courseId: courseId
      };
-       axios.post('https://backend-production-eff3.up.railway.app/api/learning', enrollRequest) .then((response) => {
+       axios.post('https://backend-production-5243.up.railway.app/api/learning', enrollRequest) .then((response) => {
             if(response.data == "Enrolled successfully"){
               toast.success('Course Enrolled successfully', {
                 position: 'top-right',
