@@ -53,7 +53,7 @@ function EditCourse() {
   useEffect(() => {
     async function fetchCourse() {
       try {
-        const response = await  axios.get(`https://backend-production-eff3.up.railway.app/api/courses/${courseId}`);
+        const response = await  axios.get(`https://backend-production-5243.up.railway.app/api/courses/${courseId}`);
         const fetchedCourse = response.data;
         setFormData(fetchedCourse);
       } catch (err) {
@@ -74,7 +74,7 @@ function EditCourse() {
     }
     console.log(formData)
     const response = await  axios.post(
-      `https://backend-production-eff3.up.railway.app/api/courses/${courseId}`,
+      `https://backend-production-5243.up.railway.app/api/courses/${courseId}`,
       formData
     );
 
