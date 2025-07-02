@@ -24,7 +24,7 @@ function Profile() {
     async function fetchUserDetails() {
       try {
         const response = await fetch(
-          `https://backend-production-eff3.up.railway.app/api/users/${id}`
+          `https://backend-production-5243.up.railway.app/api/users/${id}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch user details.");
