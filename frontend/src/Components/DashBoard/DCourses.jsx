@@ -17,7 +17,7 @@ function Courses() {
   const navigate = useNavigate();
 
   const fetchCourses = () => {
-    fetch("https://backend-production-eff3.up.railway.app/api/courses")
+    fetch("https://backend-production-5243.up.railway.app/api/courses")
       .then((res) => res.json())
       .then((data) => setCourses(data))
       .catch((err) => {
@@ -38,7 +38,7 @@ function Courses() {
 
   const handleOk = async () => {
     try {
-      const res = await axios.post("https://backend-production-eff3.up.railway.app/delete", {
+      const res = await axios.post("https://backend-production-5243.up.railway.app/delete", {
         courseId: cid,
       });
       message.success("Course deleted successfully");
