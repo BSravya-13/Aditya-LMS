@@ -10,15 +10,15 @@ function Footer(){
           <h3>🔹Quick Links</h3>
           <li><a href="https://lms-main-1.vercel.app/">Home</a></li>
           <li><a href="https://adityauniversity.in/overview">About Us</a></li>
-          <li><a href="https://lms-main-1-ten.vercel.app/courses">Courses</a></li>
+          <li><a href="https://https://aditya-lms.vercel.app/courses">Courses</a></li>
           <li><a href="https://api.whatsapp.com/send/?phone=919989776661&text&type=phone_number&app_absent=0">Contact</a></li>
         </div>
         <div className="footer-col">
           <h3>🔹Explore Topics</h3>
-          <li><a href="https://lms-main-1-ten.vercel.app/courses">Python</a></li>
-          <li><a href="https://lms-main-1-ten.vercel.app/courses">java</a></li>
-          <li><a href="https://lms-main-1-ten.vercel.app/courses">Control System</a></li>
-          <li><a href="https://lms-main-1-ten.vercel.app/courses">IOT</a></li>
+          <li><a href="https://aditya-lms.vercel.app/courses">Python</a></li>
+          <li><a href="https://aditya-lms.vercel.app/courses">java</a></li>
+          <li><a href="https://aditya-lms.vercel.app/courses">Control System</a></li>
+          <li><a href="https://aditya-lms.vercel.app/courses">IOT</a></li>
         </div>
         <div className="footer-col">
           <h3>🔹 Student Resources</h3>
